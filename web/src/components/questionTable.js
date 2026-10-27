@@ -111,7 +111,7 @@ export function renderQuestionTable(questions) {
     summary.textContent = `Showing ${rows.length} of ${questions.length} questions`;
     drawHead();
     tbody.replaceChildren(
-      ...(rows.length ? rows.map(drawRow) : [h("tr", {}, h("td", { colspan: COLUMNS.length, class: "empty muted" }, "No questions match these filters."))]),
+      ...(rows.length ? rows.map(drawRow) : [h("tr", {}, h("td", { colspan: COLUMNS.length, class: "empty-row muted" }, "No questions match these filters."))]),
     );
   }
 

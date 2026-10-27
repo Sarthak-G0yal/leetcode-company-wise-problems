@@ -76,7 +76,10 @@ a:hover { text-decoration: underline; }
 .input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
 
 /* Company list */
-.company-list { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1; }
+.company-list {
+  list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1;
+  scrollbar-width: thin; scrollbar-color: var(--border) transparent;
+}
 .company-list a {
   display: flex; justify-content: space-between; gap: 8px;
   padding: 6px 8px; border-radius: 6px; color: var(--text);
@@ -122,7 +125,7 @@ th.sortable:hover { color: var(--text); }
 .col-index { width: 40px; font-variant-numeric: tabular-nums; }
 .col-title { min-width: 220px; }
 .col-acceptance { white-space: nowrap; font-variant-numeric: tabular-nums; }
-.empty { text-align: center; padding: 24px; }
+.empty-row { text-align: center; padding: 24px; }
 
 .freq { display: flex; align-items: center; gap: 8px; min-width: 110px; font-variant-numeric: tabular-nums; }
 .freq-bar { height: 6px; border-radius: 3px; background: var(--accent); max-width: 60px; flex: none; }
